@@ -42,7 +42,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 19, 29, 19;
+  --bs-primary-rgb: 52, 58, 64;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -10969,4 +10969,46 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+
+/* Estilos para los botones de la ventana del IDE */
+.ide-buttons {
+  display: flex;
+}
+
+.ide-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.ide-button.close {
+  background-color: #ff5f56;
+}
+
+.ide-button.minimize {
+  background-color: #ffbd2e;
+}
+
+.ide-button.maximize {
+  background-color: #27c93f;
+}
+
+/* Estilos para la barra de título */
+.ide-title {
+  font-weight: bold;
+}
+
+/* Estilos para el área de código */
+.ide-code {
+  font-family: 'Source Code Pro', monospace;
+  overflow: auto;
+}
+
+/* Asegurar que el preformato no se salga del contenedor */
+.ide-code pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
