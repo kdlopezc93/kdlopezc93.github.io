@@ -90,20 +90,9 @@
   window.addEventListener('load', aosInit);
 
   /**
-   * Init typed.js
+   * Typed.js is initialized by assets/js/i18n.js instead of here, since it
+   * needs to be re-created with translated strings when the language toggles.
    */
-  const selectTyped = document.querySelector('.typed');
-  if (selectTyped) {
-    let typed_strings = selectTyped.getAttribute('data-typed-items');
-    typed_strings = typed_strings.split(',');
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
-    });
-  }
 
   /**
    * Initiate Pure Counter
@@ -130,9 +119,11 @@
   /**
    * Initiate glightbox
    */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+  if (document.querySelector('.glightbox') && typeof GLightbox !== 'undefined') {
+    GLightbox({
+      selector: '.glightbox'
+    });
+  }
 
   /**
    * Init isotope layout and filters
