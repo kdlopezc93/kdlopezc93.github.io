@@ -10,6 +10,20 @@
   "use strict";
 
   /**
+   * Compute age from birthdate so it doesn't go stale
+   */
+  const ageEl = document.getElementById('age-value');
+  if (ageEl) {
+    const birthdate = new Date(ageEl.getAttribute('data-birthdate'));
+    const today = new Date();
+    let age = today.getFullYear() - birthdate.getFullYear();
+    const hadBirthdayThisYear = (today.getMonth() > birthdate.getMonth()) ||
+      (today.getMonth() === birthdate.getMonth() && today.getDate() >= birthdate.getDate());
+    if (!hadBirthdayThisYear) age--;
+    ageEl.textContent = age;
+  }
+
+  /**
    * Header toggle
    */
   const headerToggleBtn = document.querySelector('.header-toggle');
@@ -98,23 +112,6 @@
    * Initiate Pure Counter
    */
   new PureCounter();
-
-  /**
-   * Animate the skills items on reveal
-   */
-  let skillsAnimation = document.querySelectorAll('.skills-animation');
-  skillsAnimation.forEach((item) => {
-    new Waypoint({
-      element: item,
-      offset: '80%',
-      handler: function(direction) {
-        let progress = item.querySelectorAll('.progress .progress-bar');
-        progress.forEach(el => {
-          el.style.width = el.getAttribute('aria-valuenow') + '%';
-        });
-      }
-    });
-  });
 
   /**
    * Initiate glightbox

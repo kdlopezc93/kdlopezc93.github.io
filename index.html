@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title data-i18n="meta.title">Kevin López Clopatofsky - Software Engineer</title>
   <meta content="Kevin López Clopatofsky - Software Engineer specialized in backend, frontend, cloud and process automation." name="description">
-  <meta content="software engineer, fullstack developer, java, angular, nodejs, bogota" name="keywords">
+  <meta content="software engineer, fullstack developer, senior software engineer, java, spring boot, angular, nodejs, nestjs, kubernetes, AML, compliance, banking, bogota" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -45,6 +45,7 @@
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span data-i18n="nav.home">Home</span></a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i><span data-i18n="nav.about">About</span></a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span data-i18n="nav.resume">Resume</span></a></li>
+        <li><a href="reflections.html"><i class="bi bi-lightbulb navicon"></i><span data-i18n="nav.reflections">Reflections</span></a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span data-i18n="nav.contact">Contact</span></a></li>
         <li class="lang-switch">
           <button type="button" id="lang-toggle" class="lang-toggle-btn" aria-label="Toggle language">
@@ -58,6 +59,19 @@
 
   <main class="main">
 
+    <!-- Floating Turing quotes -->
+    <div class="turing-float" id="turing-float">
+      <i class="bi bi-quote"></i>
+      <div class="turing-float-slot">
+        <p class="turing-float-quote is-visible" data-i18n="reflections.quote">
+          «The interesting question is not whether machines can think, but whether humans can stop thinking like machines.» - Alan Turing
+        </p>
+        <p class="turing-float-quote" data-i18n="reflections.quote2">
+          "Sometimes people think that if a machine can do a job, it must be following some rule or set of instructions, when in fact it may be doing something quite original." - Alan Turing
+        </p>
+      </div>
+    </div>
+
     <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
 
@@ -67,7 +81,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-9">
             <h2>Kevin Danilo L&oacute;pez Clopatofsky</h2>
-            <p><span data-i18n="hero.imLabel">I'm</span> <span class="typed" data-typed-items="Software developer, Back-end, Front-end, Java, Angular, NodeJS, BPM (Bonitasoft)" data-typed-items-es="Ingeniero de software, Back-end, Front-end, Java, Angular, NodeJS, BPM (Bonitasoft)">Software developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            <p><span data-i18n="hero.imLabel">I'm</span> <span class="typed" data-typed-items="Senior Software Engineer, Back-end, Front-end, Java, Angular, NodeJS, BPM (Bonitasoft)" data-typed-items-es="Ingeniero de Software Senior, Back-end, Front-end, Java, Angular, NodeJS, BPM (Bonitasoft)">Senior Software Engineer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
             <div class="social-links">
               <a href="https://github.com/kdlopezc93" target="_blank"><i class="bi bi-github"></i></a>
               <a href="https://www.linkedin.com/in/kevindlclopatofsky-fullstackdeveloper/" target="_blank"><i class="bi bi-linkedin"></i></a>
@@ -84,7 +98,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2 data-i18n="about.title">About</h2>
-        <p data-i18n="about.intro">I have over 9 years of experience in software development, working on projects that include banking systems, regulatory compliance (AML), process automation, RPA, continuous integration, and frontend and backend development. Specialized in technologies such as Java, Angular, NodeJS, NestJS, Spring Boot, Kubernetes, and BonitaSoft, among others.</p>
+        <p data-i18n="about.intro">9+ years building fullstack software for regulated, high-stakes financial systems.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -94,10 +108,7 @@
             <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
-            <h2 data-i18n="about.subtitle">Web Developer.</h2>
-            <p class="fst-italic py-3" data-i18n="about.quote">
-              «The interesting question is not whether machines can think, but whether humans can stop thinking like machines.» - Alan Turing
-            </p>
+            <h2 data-i18n="about.subtitle">Senior Software Engineer.</h2>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
@@ -108,26 +119,22 @@
                 </ul>
               </div>
               <div class="col-lg-6">
-                <ul>                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.ageLabel">Age:</strong> <span>33</span></li>
+                <ul>                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.ageLabel">Age:</strong> <span id="age-value" data-birthdate="1993-04-22"></span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.degreeLabel">Degree:</strong> <span data-i18n="about.degreeValue">Electronic engineer</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.emailLabel">Email:</strong> <span>kdlopezc93@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.openToWork">Open to work</strong></li>
                 </ul>
               </div>
             </div>
-            <p class="py-3" data-i18n="about.paragraph">
-              It's so exciting to see how the software development industry is evolving! It's going to
-              be a whole new world driven by automation, artificial intelligence and increasingly
-              abstract programming layers. As AI models get smarter, the line between human
-              intuition and machine logic will get a little blurrier. This will allow software to become
-              more autonomous in decision-making processes, self-healing in operational contexts
-              and highly adaptable to changing environments. As time goes by, developers will move
-              from coding detailed instructions to orchestrating complex systems in which data,
-              algorithms and machine learning models collaborate in real time. This shift will require
-              a deep understanding not only of programming, but also of ethics, as the social impact
-              of technology becomes inseparable from its technical execution. In the future, software
-              development will be less about writing code and more about designing intelligent
-              systems that evolve, adapt and learn from their interactions with the world.
+            <p class="py-3" data-i18n="about.pitch">
+              I'm a Senior Software Engineer with 9+ years building fullstack solutions for regulated,
+              high-stakes environments — from anti-money laundering (AML) compliance platforms at
+              Mercado Libre to banking systems built on BBVA's technology stack. I work across the
+              stack with Java, Spring Boot, Node.js, NestJS and Angular, deploy and scale services on
+              Kubernetes and OpenShift, and have led process-automation initiatives with BonitaSoft
+              BPM and RPA that cut manual review effort across multiple countries. I care about clean
+              architecture, CI/CD discipline and mentoring the developers around me — and I'm
+              currently open to new opportunities, remote or based in Bogotá.
             </p>
           </div>
         </div>
@@ -187,74 +194,115 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2 data-i18n="skills.title">Skills</h2>
-        <p class="fst-italic py-3" data-i18n="skills.quote1">"Sometimes people think that if a machine can do a job, it must be following some rule or set of instructions, when in fact it may be doing something quite original." </p><p data-i18n="skills.quote2">-- Alan Turing</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row skills-content skills-animation">
+        <div class="row skills-content">
 
           <div class="col-lg-6">
 
-            <div class="progress">
-              <span class="skill"><span>Spring Boot</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="skills-category">
+              <h4 data-i18n="skills.catAiDev">AI-Assisted Development</h4>
+              <div class="skills-tags">
+                <span class="tag">Claude Code</span>
+                <span class="tag">GitHub Copilot</span>
+                <span class="tag">Cursor</span>
+                <span class="tag">Windsurf</span>
+                <span class="tag">OpenAI Codex</span>
+                <span class="tag">Spec-Driven Development (SDD)</span>
+                <span class="tag">Prompt Engineering</span>
               </div>
-            </div><!-- End Skills Item -->
+            </div><!-- End Skills Category -->
 
-            <div class="progress">
-              <span class="skill"><span>NodeJS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="skills-category">
+              <h4 data-i18n="skills.catAiLlm">AI & LLM Engineering</h4>
+              <div class="skills-tags">
+                <span class="tag">LLM API Integration</span>
+                <span class="tag">Agentic Workflows (MCP)</span>
+                <span class="tag">Vector Databases</span>
+                <span class="tag">AI-Assisted Code Review</span>
+                <span class="tag">AI-Assisted Testing</span>
               </div>
-            </div><!-- End Skills Item -->
+            </div><!-- End Skills Category -->
 
-            <div class="progress">
-              <span class="skill"><span>Bonita Soft</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="skills-category">
+              <h4 data-i18n="skills.catBackend">Backend</h4>
+              <div class="skills-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">NestJS</span>
+                <span class="tag">Groovy</span>
+                <span class="tag">Laravel</span>
               </div>
-            </div><!-- End Skills Item -->
+            </div><!-- End Skills Category -->
 
-            <div class="progress">
-              <span class="skill"><span>Java</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="skills-category">
+              <h4 data-i18n="skills.catFrontend">Frontend</h4>
+              <div class="skills-tags">
+                <span class="tag">Angular</span>
+                <span class="tag">AngularJS</span>
               </div>
-            </div><!-- End Skills Item -->
+            </div><!-- End Skills Category -->
+
+            <div class="skills-category">
+              <h4 data-i18n="skills.catCloud">Cloud & DevOps</h4>
+              <div class="skills-tags">
+                <span class="tag">Kubernetes</span>
+                <span class="tag">OpenShift</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Azure</span>
+                <span class="tag">Jenkins</span>
+                <span class="tag">Artifactory / Nexus</span>
+              </div>
+            </div><!-- End Skills Category -->
+
+            <div class="skills-category">
+              <h4 data-i18n="skills.catIntegration">Integration & Messaging</h4>
+              <div class="skills-tags">
+                <span class="tag">REST</span>
+                <span class="tag">GraphQL</span>
+                <span class="tag">Kafka</span>
+                <span class="tag">RabbitMQ</span>
+              </div>
+            </div><!-- End Skills Category -->
 
           </div>
 
           <div class="col-lg-6">
 
-            <div class="progress">
-              <span class="skill"><span>GIT</span> <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="skills-category">
+              <h4 data-i18n="skills.catSecurity">Security & Identity</h4>
+              <div class="skills-tags">
+                <span class="tag">Keycloak</span>
+                <span class="tag">OAuth2</span>
+                <span class="tag">OpenID Connect</span>
               </div>
-            </div><!-- End Skills Item -->
+            </div><!-- End Skills Category -->
 
-            <div class="progress">
-              <span class="skill"><span>Angular</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="skills-category">
+              <h4 data-i18n="skills.catAutomation">Automation & BPM</h4>
+              <div class="skills-tags">
+                <span class="tag">BonitaSoft</span>
+                <span class="tag">BPMN 2.0</span>
+                <span class="tag">Automation Anywhere (RPA)</span>
               </div>
-            </div><!-- End Skills Item -->
+            </div><!-- End Skills Category -->
 
-            <div class="progress">
-              <span class="skill"><span>NestJS</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="skills-category">
+              <h4 data-i18n="skills.catTools">Tools & Quality</h4>
+              <div class="skills-tags">
+                <span class="tag">Git</span>
+                <span class="tag">Dynatrace</span>
+                <span class="tag">Datadog</span>
+                <span class="tag">Grafana</span>
+                <span class="tag">OpsGenie</span>
+                <span class="tag">Elasticsearch</span>
+                <span class="tag">SonarQube</span>
+                <span class="tag">Postman</span>
               </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Laravel</span> <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
+            </div><!-- End Skills Category -->
 
           </div>
 
@@ -398,6 +446,9 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Floating Turing quotes -->
+  <script src="assets/js/turing-float.js"></script>
 
 </body>
 

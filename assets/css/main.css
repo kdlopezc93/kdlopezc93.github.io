@@ -711,38 +711,81 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+.skills .skills-category {
+  margin-bottom: 25px;
 }
 
-.skills .progress .skill {
-  color: var(--heading-color);
-  padding: 0;
-  margin: 0 0 6px 0;
+.skills .skills-category h4 {
+  font-size: 16px;
+  font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--heading-color);
+  margin-bottom: 12px;
+}
+
+.skills .skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills .tag {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+}
+
+/*--------------------------------------------------------------
+# Reflections Section
+--------------------------------------------------------------*/
+.turing-float {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  width: 260px;
+  padding: 16px 18px;
+  border-radius: 12px;
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 997;
+}
+
+.turing-float i {
+  color: var(--accent-color);
+  font-size: 22px;
+  line-height: 1;
+}
+
+.turing-float-slot {
+  position: relative;
+  margin-top: 8px;
+  min-height: 90px;
+}
+
+.turing-float-quote {
+  display: none;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+  margin: 0;
+}
+
+.turing-float-quote.is-visible {
   display: block;
-  font-weight: 600;
-  font-family: var(--heading-font);
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
-  height: 10px;
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: var(--accent-color);
+@media (max-width: 1200px) {
+  .turing-float {
+    display: none;
+  }
 }
 
 /*--------------------------------------------------------------

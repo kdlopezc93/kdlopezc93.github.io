@@ -32,14 +32,17 @@ const RESUME_DATA = {
 
     experience: [
       {
-        title: "Software Engineer SSR",
+        title: "Senior Software Engineer",
         dates: "April 2025 - July 2026",
         company: "Mercado Libre, Remote",
         bullets: [
           "Development of backend APIs and frontend features for the Anti-Money Laundering (AML) compliance area.",
           "Application segmentation to support new business models, including banks in Argentina and Mexico and a fiduciary institution in Mexico, ensuring regulatory compliance across countries.",
           "Infrastructure management supporting the AML platform and its services.",
-          "Improvement of workflows and processes for reviewing potential infraction cases across Mercado Libre's regional sites, ensuring compliance with each country's regulations."
+          "Improvement of workflows and processes for reviewing potential infraction cases across Mercado Libre's regional sites, ensuring compliance with each country's regulations.",
+          "Monitoring and incident response using Datadog, Grafana and OpsGenie to ensure platform availability and reliability.",
+          "Adopted AI-assisted engineering practices end to end — Spec-Driven Development, prompt engineering, and AI-assisted code review, testing and documentation — using Claude Code, GitHub Copilot, Cursor, Windsurf and OpenAI Codex to speed up delivery on the AML platform.",
+          "Integrated LLM APIs and agentic workflows (MCP) into internal tooling, backed by Mercado Libre's proprietary vector-database infrastructure, extending AI into the team's automation workflows."
         ]
       },
       {
@@ -55,7 +58,8 @@ const RESUME_DATA = {
           "Authentication and security management with Keycloak, integrating OAuth2 and OpenID Connect flows.",
           "Advanced monitoring with Dynatrace, Elasticsearch, SonarQube and Postman, ensuring traceability and application optimization.",
           "Development and automation of BPM workflows with BonitaSoft and BPMN 2.0, improving efficiency in business processes.",
-          "Team leadership, driving adoption of best practices in development and Agile/DevOps methodologies."
+          "Team leadership, driving adoption of best practices in development and Agile/DevOps methodologies.",
+          "Began exploring AI-assisted coding with Cursor for day-to-day development tasks."
         ]
       },
       {
@@ -133,7 +137,10 @@ const RESUME_DATA = {
           "Desarrollo de APIs backend y funcionalidades frontend para el área de cumplimiento contra el Lavado de Activos (AML).",
           "Segmentación de aplicaciones para dar soporte a nuevos modelos de negocio, incluyendo bancos en Argentina y México y una fiduciaria en México, garantizando el cumplimiento normativo en cada país.",
           "Gestión de infraestructura de soporte para la plataforma de AML y sus servicios.",
-          "Mejora de flujos y procesos para la revisión de posibles casos de infracción en los distintos sitios regionales de Mercado Libre, asegurando el cumplimiento de la normativa de cada país."
+          "Mejora de flujos y procesos para la revisión de posibles casos de infracción en los distintos sitios regionales de Mercado Libre, asegurando el cumplimiento de la normativa de cada país.",
+          "Monitoreo y respuesta a incidentes usando Datadog, Grafana y OpsGenie para garantizar la disponibilidad y confiabilidad de la plataforma.",
+          "Adopción de prácticas de desarrollo asistidas por IA de punta a punta — Spec-Driven Development, prompt engineering, y revisión de código, pruebas y documentación asistidas por IA — usando Claude Code, GitHub Copilot, Cursor, Windsurf y OpenAI Codex para acelerar la entrega en la plataforma de AML.",
+          "Integración de APIs de LLMs y flujos de trabajo con agentes (MCP) en herramientas internas, apoyado en la infraestructura propia de bases de datos vectoriales de Mercado Libre, extendiendo el uso de IA a los flujos de automatización del equipo."
         ]
       },
       {
@@ -149,7 +156,8 @@ const RESUME_DATA = {
           "Gestión de autenticación y seguridad con Keycloak, integrando flujos OAuth2 y OpenID Connect.",
           "Monitoreo avanzado con Dynatrace, Elasticsearch, SonarQube y Postman, asegurando trazabilidad y optimización de aplicaciones.",
           "Desarrollo y automatización de flujos BPM con BonitaSoft y BPMN 2.0, mejorando la eficiencia en procesos empresariales.",
-          "Liderazgo y gestión de equipos, facilitando la adopción de mejores prácticas en desarrollo y metodologías Agile y DevOps."
+          "Liderazgo y gestión de equipos, facilitando la adopción de mejores prácticas en desarrollo y metodologías Agile y DevOps.",
+          "Inicio de exploración de codificación asistida por IA con Cursor en tareas de desarrollo del día a día."
         ]
       },
       {
